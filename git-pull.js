@@ -12,11 +12,15 @@ export async function main(ns) {
 
         let file = files[i];
 
-        await ns.wget(endpoint + file, file);
+        let success = await ns.wget(endpoint + file, file);
 
-        ns.tprint("INFO--- PULLING NEW FILE FROM GIT: " + file);
+        if (success) {
+            ns.tprint("INFO--- PULLING NEW FILE FROM GIT: " + file);
+        } else {
+            ns.tprint("ERROR--- FAILED TO FETCH FILE: " + file);
+        }
+
+
     }
-
-    ns.toast("INFO--- UPDATED GIT FILES");
 
 }
