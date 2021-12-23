@@ -1,10 +1,10 @@
 /** @param {NS} ns **/
 export async function main(ns) {
 
-    const endpoint = "https://raw.githubusercontent.com/adamkosinar/bitburner-scripts/master/";
+    const endpoint = "https://raw.githubusercontent.com/adamkosinar/bitburner-scripts/master";
 
     const files = [
-        "git-pull.js"
+        "/servers/server-manager.js",
     ];
 
 
