@@ -14,7 +14,7 @@ export async function main(ns) {
 
         await ns.wget(endpoint + file, file);
 
-        ns.print("INFO--- PULLING NEW FILE FROM GIT: " + file);
+        ns.tprint("INFO--- PULLING NEW FILE FROM GIT: " + file);
     }
 
 
