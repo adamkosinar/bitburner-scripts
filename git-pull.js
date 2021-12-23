@@ -17,5 +17,6 @@ export async function main(ns) {
         ns.tprint("INFO--- PULLING NEW FILE FROM GIT: " + file);
     }
 
+    ns.toast("INFO--- UPDATED GIT FILES");
 
 }
